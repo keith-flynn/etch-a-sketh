@@ -13,10 +13,14 @@ body {
   justify-content: center;
 }
 
-#reset {
-  display: block;
-  padding: 1em;
+.controls button {
+  padding: 0.5em 1em;
   margin: 1em;
+}
+
+#grid-size-input {
+  padding: 0.5em;
+  text-align: center;
 }
 
 #container {
