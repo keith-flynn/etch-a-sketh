@@ -13,9 +13,34 @@ body {
   justify-content: center;
 }
 
+body {
+  background-image: url(./xmas-bg.png);
+  background-size: cover;
+}
+
+.controls {
+  background-color: lightcoral;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+label {
+  padding: 0.5em;
+  border-radius: 5px;
+  color: blue;
+}
+
+input {
+  color: red;
+  background-color: lightgreen;
+}
+
 .controls button {
   padding: 0.5em 1em;
   margin: 1em;
+  color: red;
+  background-color: lightgreen;
+  border-radius: 10px;
 }
 
 #grid-size-input {

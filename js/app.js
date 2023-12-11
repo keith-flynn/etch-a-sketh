@@ -20,6 +20,7 @@ function generatePanels() {
       panelColumn.classList.add('column');
       panelRow.appendChild(panelColumn);
     }
+    addPanelListeners();
   }
   //addPanelListeners();
 }
@@ -57,7 +58,7 @@ function addPanelListeners() {
     });
   });
 }
-addPanelListeners();
+//addPanelListeners();
 
 // Reset button event listener
 resetButton.addEventListener("click", (e) => {
