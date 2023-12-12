@@ -1,5 +1,6 @@
 'use-strict';
 const gridSizeInput = document.getElementById("grid-size-input")
+const widthDimension = document.querySelector(".width-dimension")
 const submitButton = document.getElementById("submit");
 const resetButton = document.getElementById("reset")
 const container = document.getElementById('container');
@@ -22,7 +23,7 @@ function generatePanels() {
     }
     addPanelListeners();
   }
-  //addPanelListeners();
+  generateWidthDisplay();
 }
 
 generatePanels();
@@ -33,10 +34,12 @@ function changePanels() {
   addPanelListeners();
 }
 
+function generateWidthDisplay() {
+  widthDimension.innerText = `X ${gridSizeValue}`;
+}
+
 // Double event listeners for mousedown and mouseenter
 // A click-and-hold to draw gesture
-
-
 let isMouseDown = false;
 
 document.addEventListener('mousedown', () => {
@@ -58,7 +61,6 @@ function addPanelListeners() {
     });
   });
 }
-//addPanelListeners();
 
 // Reset button event listener
 resetButton.addEventListener("click", (e) => {
