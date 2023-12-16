@@ -34,6 +34,7 @@ function changePanels() {
   addPanelListeners();
 }
 
+// Match the input for a [number] X [number] square display
 function generateWidthDisplay() {
   widthDimension.innerText = `X ${gridSizeValue}`;
 }
