@@ -70,3 +70,4 @@ resetButton.addEventListener("click", (e) => {
 
 // Change grid size event listener
 submitButton.addEventListener("click", changePanels);
+
