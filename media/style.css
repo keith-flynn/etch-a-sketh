@@ -22,6 +22,8 @@ body {
   background-color: lightcoral;
   border-radius: 10px;
   margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
 }
 
 label {
