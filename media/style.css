@@ -55,6 +55,8 @@ input {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 2;
 }
 
 .row {
@@ -77,10 +79,11 @@ input {
 #snow-container {  
   height: 100vh;
   overflow: hidden;
-  position: absolute;
+  position: fixed;
   top: 0;
   transition: opacity 500ms;
   width: 100%;
+  z-index: 1;
 }
 
 .snow {
