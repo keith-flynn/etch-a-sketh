@@ -10,7 +10,6 @@ const random = (num) => {
 }
 
 // Generate random style for each flake
-// Fall AND sway
 const getRandomStyles = () => {
   const top = random(100);
   const left = random(100);
